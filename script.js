@@ -55,6 +55,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    let lastTimestamp = 0;
+
+    document.addEventListener('mousemove', function(e) {
+        const currentTimestamp = Date.now();
+        if (currentTimestamp - lastTimestamp > 100) {
+            lastTimestamp = currentTimestamp;
+            requestAnimationFrame(() => createSparkle(e.pageX, e.pageY));
+        }
+    });
+
+    // Track scrolling to update mouse trail position
+    window.addEventListener('scroll', function() {
+        const sparkles = document.querySelectorAll('.sparkle');
+        sparkles.forEach(sparkle => {
+            const rect = sparkle.getBoundingClientRect();
+            sparkle.style.left = rect.left + window.scrollX + 'px';
+            sparkle.style.top = rect.top + window.scrollY + 'px';
+        });
+    });
+});
+
+
 function createSparkle(x, y) {
     const sparkle = document.createElement('div');
     sparkle.classList.add('sparkle');
@@ -66,7 +89,13 @@ function createSparkle(x, y) {
     sparkle.addEventListener('animationend', function() {
         sparkle.remove();
     });
+
+    // Automatically remove sparkles after a certain duration (e.g., 1 second)
+    setTimeout(() => {
+        sparkle.remove();
+    }, 1000);
 }
+
 
 // JavaScript to handle the Easter egg functionality
 document.addEventListener('DOMContentLoaded', function() {

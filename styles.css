@@ -9,9 +9,10 @@ body, html {
   body {
     transition: background-size 0.5s ease; /* Add transition effect for background size change */
     background-image: url('files/neco.jpg');
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #6A5ACD;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     color: #FF69B4;
@@ -132,16 +133,18 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     color: white; /* Color for the specific class of text */
   }
 
-  .made-with {
-    position: absolute;
-    bottom: 10px; /* Adjust vertical position */
-    right: 10px; /* Adjust horizontal position */
-    color: #888; /* Adjust color */
-  }
+/* Made by love footer */
+.made-with {
+  position: fixed;
+  bottom: 20px; /* Adjust vertical position */
+  right: 10px; /* Adjust horizontal position */
+  color: #fcfcfc; /* Adjust color */
+  z-index: 999; /* Ensure it's above other content */
+}
 
   /* Websites */
 
@@ -206,9 +209,10 @@ body {
 
   /* Define styles for the FNF character */
   .fnf-character {
-    position: absolute;
-    bottom: 70px;
-    left: 20px;
+    position: fixed;
+    bottom: 70px; /* Adjust vertical position */
+    left: 20px; /* Adjust horizontal position */
+    z-index: 9999; /* Ensure it's above other content */
   }
 
 
@@ -279,7 +283,7 @@ body {
   position: fixed;
   width: 10px;
   height: 10px;
-  background-color: rgba(255, 105, 180, 0.5); /* Pink color with transparency */
+  background-color: rgba(217, 126, 240, 0.897); /* Pink color with transparency */
   border-radius: 50%;
   pointer-events: none; /* Allow cursor to pass through */
   z-index: 9999; /* Ensure it's on top of other content */
@@ -291,9 +295,20 @@ body {
   100% { opacity: 0; transform: translateY(50px); } /* End position */
 }
 
-/* For smaller screens */
-@media (max-width: 768px) {
-  /* Add your responsive styles here */
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  @media only screen and (max-width: 768px) {
+    /* Adjust background size for small screens */
+    .background-image {
+        background-size: contain;
+    }
+}
+  /* Example: */
+  .container {
+    padding: 10px;
+  }
+  /* Add more styles for smaller screens as needed */
 }
 
 /* For larger screens */
@@ -412,4 +427,15 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* for footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* Adjust background color as needed */
+  color: #fff; /* Adjust text color as needed */
+  padding: 20px; /* Adjust padding as needed */
 }
