@@ -104,7 +104,7 @@ document.addEventListener("mousemove",(e)=>{
 });
 
 
-
+// OUTDATED SPARKLE (DONT USE)
 // function createSparkle(x, y) {
 //     const sparkle = document.createElement('div');
 //     sparkle.classList.add('sparkle');
