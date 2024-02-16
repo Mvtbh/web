@@ -10,6 +10,7 @@ body, html {
     transition: background-size 0.5s ease; /* Add transition effect for background size change */
     background-image: url('files/neco.jpg');
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: #6A5ACD;
     background-repeat: no-repeat;
@@ -279,22 +280,6 @@ body {
   animation: fadeIn 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
 }
 
-.sparkle {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background-color: rgba(217, 126, 240, 0.897); /* Pink color with transparency */
-  border-radius: 50%;
-  pointer-events: none; /* Allow cursor to pass through */
-  z-index: 9999; /* Ensure it's on top of other content */
-  animation: sparkleAnimation 1s ease forwards; /* Add sparkle animation */
-}
-
-@keyframes sparkleAnimation {
-  0% { opacity: 1; transform: translateY(0); } /* Start position */
-  100% { opacity: 0; transform: translateY(50px); } /* End position */
-}
-
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   /* Adjust styles for smaller screens */
@@ -438,4 +423,22 @@ body {
   background-color: #333; /* Adjust background color as needed */
   color: #fff; /* Adjust text color as needed */
   padding: 20px; /* Adjust padding as needed */
+}
+
+
+/* Made by Kyuiki @ 2024 - kyuiki.com */
+.spark{
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(226, 43, 171);
+  border-radius: 100px;
+  /* animation: 1s fall ease-in; */
+}
+@keyframes fall {
+  to{
+    opacity: 0;
+    transform: translate(0,100px) scale(5) rotate(320deg);
+  }
+  
 }
