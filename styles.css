@@ -102,7 +102,7 @@ body, html {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
   }
   .opcoirs-website {
@@ -211,7 +211,7 @@ body {
   /* Define styles for the FNF character */
   .fnf-character {
     position: fixed;
-    bottom: 70px; /* Adjust vertical position */
+    bottom: 58px; /* Adjust vertical position */
     left: 20px; /* Adjust horizontal position */
     z-index: 9999; /* Ensure it's above other content */
   }
@@ -281,24 +281,20 @@ body {
 }
 
 /* Media query for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 885px) 
   /* Adjust styles for smaller screens */
-  @media only screen and (max-width: 768px) {
-    /* Adjust background size for small screens */
     .background-image {
         background-size: contain;
+        .transport-taskbar {
+          display: none;
     }
 }
+{
   /* Example: */
   .container {
     padding: 10px;
   }
   /* Add more styles for smaller screens as needed */
-}
-
-/* For larger screens */
-@media (min-width: 1024px) {
-  /* Add your responsive styles here */
 }
 
 .main-menu ul {
@@ -442,4 +438,9 @@ body {
     transform: translate(0,100px) scale(5) rotate(320deg);
   }
   
+}
+
+.friend-name {
+  color: white;
+  text-decoration: underline;
 }
