@@ -1,446 +1,407 @@
 /* basic shit */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-  }
-  
-  /* Background and text */
-  body {
-    transition: background-size 0.5s ease; /* Add transition effect for background size change */
-    background-image: url('files/neco.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-color: #000000;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    color: #FF69B4;
-  }
-  
-  /* Name and AKA */
-  .name {
-    font-size: 36px;
-    text-align: center;
-    text-shadow: 0 0 20px #FF69B4;
-  }
-  
-  .aka {
-    font-size: 14px;
-  }
-  
-  /* Button */
-  nav {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  nav a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FF69B4;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 0 10px;
-    transition: background-color 0.3s;
-  }
-  
-  nav a:hover {
-    background-color: #FF1493;
-  }
-  
-  /* Avatar */
-  .avatar {
-    width: 150px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
-    border-radius: 50%; /* Creates a circular shape */
-    overflow: hidden; /* Ensures the image stays within the rounded border */
-    margin: 20px auto;
-  }
-  
-  .avatar-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire container */
-  }
-  
-  /* Taskbar styles */
-  .taskbar {
-    margin-top: 40px;
-    text-align: center;
-  }
-  
-  .taskbar a {
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: none;
-    color: white;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
 
-  .taskbar a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Friend's website button styles */
-  .friend-website {
-    color: rgb(221, 17, 17);
-    text-decoration: none;
-    text-align: left;
-    margin-top: 0px;
-    margin-left: 99px;
-  }
-  
-  /* Transport taskbar styles */
-  .transport-taskbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 5px;
-    text-align: center;
-  }
-  .opcoirs-website {
-    text-align: center;
-    margin-top: 30px; /* Adjust as needed */
-    color: #fff; /* Adjust text color */
-  }
+/* Background and text */
+body {
+  transition: background-size 0.5s ease; /* Add transition effect for background size change */
+  background-image: url('files/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: #665ee0b4;
+}
 
-  .container {
-    text-align: center; /* Center-align content */
-    margin-top: 20px; /* Adjust margin to move the content higher */
-  }
-  
-  .pronouns {
-    color: #ec32ec; /* Adjust color */
-    font-style: italic; /* Optionally italicize the text */
-    margin-top: 4px; /* Adjust negative margin to move the text higher */
-  }
+/* Name and AKA */
+.name {
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 0 0 20px #5956dd;
+}
 
-  .software-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
-    color: white; /* Color for the specific class of text */
-  }
+.aka {
+  font-size: 14px;
+}
 
-  .language-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    color: white; /* Color for the specific class of text */
-  }
+/* Button */
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6774eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #431fe6;
+}
+
+/* Avatar */
+.avatar {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  border-radius: 50%; /* Creates a circular shape */
+  overflow: hidden; /* Ensures the image stays within the rounded border */
+  margin: 20px auto;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+/* Taskbar styles */
+.taskbar {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.taskbar a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.taskbar a:hover {
+  text-decoration: underline;
+}
+
+/* Transport taskbar styles */
+.transport-taskbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.container {
+  text-align: center; /* Center-align content */
+  margin-top: 20px; /* Adjust margin to move the content higher */
+}
+
+.pronouns {
+  color: #5664e2; /* Adjust color */
+  font-style: italic; /* Optionally italicize the text */
+  margin-top: 4px; /* Adjust negative margin to move the text higher */
+}
+
+.software-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  color: white; /* Color for the specific class of text */
+}
+
+.language-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: white; /* Color for the specific class of text */
+}
 
 /* Made by love footer */
 .made-with {
-  position: fixed;
-  bottom: 20px; /* Adjust vertical position */
-  right: 10px; /* Adjust horizontal position */
-  color: #fcfcfc; /* Adjust color */
-  z-index: 999; /* Ensure it's above other content */
+position: fixed;
+bottom: 20px; /* Adjust vertical position */
+right: 10px; /* Adjust horizontal position */
+color: #fcfcfc; /* Adjust color */
+z-index: 999; /* Ensure it's above other content */
 }
 
-  /* Websites */
+/* Websites */
 
-  .websites {
-    margin-top: 20px;
-    text-align: center;
-  }
+.websites {
+  margin-top: 20px;
+  text-align: center;
+}
 
-  .websites a {
-    display: inline-block;
-    margin: 0 20px;
-    text-decoration: none;
-    color: rgba(180, 153, 224, 0.644);
-  }
+.websites a {
+  display: inline-block;
+  margin: 0 20px;
+  text-decoration: none;
+  color: rgba(180, 153, 224, 0.644);
+}
 
 /* Reset default margin and padding for body */
 body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Clock styles */
-  .clock {
-    position: fixed; /* Position the clock fixed within the viewport */
-    top: 20px; /* Adjust top distance */
-    left: 20px; /* Adjust left distance */
-    font-size: 24px;
-    color: #ffffff; /* Set color to red */
+  margin: 0;
+  padding: 0;
+}
 
-  }
+/* Clock styles */
+.clock {
+  position: fixed; /* Position the clock fixed within the viewport */
+  top: 20px; /* Adjust top distance */
+  left: 20px; /* Adjust left distance */
+  font-size: 24px;
+  color: #ffffff; /* Set color to red */
 
-  .time-zone {
-    font-size: 16px;
-    color: #ffffff; /* Set color to light gray */
-    text-align: center; /* Center-align the text */
-  }
-  
+}
 
-  .icon-container {
+.time-zone {
+  font-size: 16px;
+  color: #ffffff; /* Set color to light gray */
+  text-align: center; /* Center-align the text */
+}
 
-    display: flex;
-    justify-content: center; /* Horizontally center the icons */
-    align-items: center; /* Vertically center the icons */
+
+.icon-container {
+
+  display: flex;
+  justify-content: center; /* Horizontally center the icons */
+  align-items: center; /* Vertically center the icons */
 }
 
 /* Define styles for the languages text */
 .languages {
-    margin-top: 10px; /* Add margin to separate from the clock */
-    font-size: 16px;
-    color: #ac60be; /* Set color to light gray */
-    text-align: center; /* Center-align the text */
-    margin-top: -205px;
-  }
+  margin-top: 10px; /* Add margin to separate from the clock */
+  font-size: 16px;
+  color: #8685db; /* Set color to light gray */
+  text-align: center; /* Center-align the text */
+  margin-top: -205px;
+}
 
-  .softwares {
-    margin-top: 10px; /* Add margin to separate from the clock */
-    font-size: 16px;
-    color: #ac60be; /* Set color to light gray */
-    text-align: center; /* Center-align the text */
-    margin-top: -150px;
-  }
+.softwares {
+  margin-top: 10px; /* Add margin to separate from the clock */
+  font-size: 16px;
+  color: #8685db; /* Set color to light gray */
+  text-align: center; /* Center-align the text */
+  margin-top: -150px;
+}
 
-  /* Define styles for the FNF character */
-  .fnf-character {
-    position: fixed;
-    bottom: 58px; /* Adjust vertical position */
-    left: 20px; /* Adjust horizontal position */
-    z-index: 9999; /* Ensure it's above other content */
-  }
-
-
-  /* Centering the music player */
+/* Centering the music player */
 .music-player {
-  margin: 20px auto; /* Center the music player horizontally with some top margin */
-  width: 300px; /* Adjust the width of the music player */
-  padding: 10px; /* Add padding for better spacing */
-  background-color: #aa1e64be; /* Pink background color */
-  border: 2px solid #ff69b4; /* Pink border */
-  border-radius: 5px; /* Adjust border radius */
-  text-align: center; /* Center the content inside the music player */
+margin: 20px auto; /* Center the music player horizontally with some top margin */
+width: 300px; /* Adjust the width of the music player */
+padding: 10px; /* Add padding for better spacing */
+background-color: #291eca9c; /* Pink background color */
+border: 2px solid #6999ff; /* Pink border */
+border-radius: 5px; /* Adjust border radius */
+text-align: center; /* Center the content inside the music player */
 }
 
 /* Styles for the music details */
 .music-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .music-title {
-  margin: 0; /* Remove default margin */
-  font-size: 14px; /* Adjust font size */
+margin: 0; /* Remove default margin */
+font-size: 14px; /* Adjust font size */
 }
 
 button {
-  padding: 6px 12px; /* Adjust padding */
-  font-size: 14px; /* Adjust font size */
+padding: 6px 12px; /* Adjust padding */
+font-size: 14px; /* Adjust font size */
 }
 
 #volumeSlider {
-  width: 90%; /* Adjust width */
-  margin-top: 20px; /* Add top margin */
-  background-color: #ff69b4; /* Set volume bar background color to pink */
-  height: 9px; /* Set volume bar height */
-  border-radius: 5px; /* Adjust border radius */
+width: 90%; /* Adjust width */
+margin-top: 20px; /* Add top margin */
+background-color: #6973ff; /* Set volume bar background color to pink */
+height: 9px; /* Set volume bar height */
+border-radius: 5px; /* Adjust border radius */
 }
 
 /* Styles for the music player button */
 button#playBtn {
-  background-color: #ff69b4; /* Pink background color */
-  color: #fff; /* White text color */
-  border: none; /* Remove border */
-  border-radius: 3px; /* Adjust border radius */
-  padding: 6px 12px; /* Adjust padding */
-  font-size: 14px; /* Adjust font size */
-  cursor: pointer; /* Change cursor to pointer on hover */
+background-color: #6973ff; /* Pink background color */
+color: #fff; /* White text color */
+border: none; /* Remove border */
+border-radius: 3px; /* Adjust border radius */
+padding: 6px 12px; /* Adjust padding */
+font-size: 14px; /* Adjust font size */
+cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 /* Hover effect for the music player button */
 button#playBtn:hover {
-  opacity: 0.8; /* Reduce opacity on hover */
+opacity: 0.8; /* Reduce opacity on hover */
 }
 
 /* Keyframes for opening fade animation */
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+0% { opacity: 0; }
+100% { opacity: 1; }
 }
 
 /* Apply opening fade animation to the body */
 body {
-  animation: fadeIn 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
+animation: fadeIn 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
 }
 
 /* Media query for smaller screens */
 @media screen and (max-width: 885px) 
-  /* Adjust styles for smaller screens */
-    .background-image {
-        background-size: contain;
-        .transport-taskbar {
-          display: none;
-    }
+/* Adjust styles for smaller screens */
+  .background-image {
+      background-size: contain;
+      .transport-taskbar {
+        display: none;
+  }
 }
 {
-  /* Example: */
-  .container {
-    padding: 10px;
-  }
-  /* Add more styles for smaller screens as needed */
+/* Example: */
+.container {
+  padding: 10px;
+}
+/* Add more styles for smaller screens as needed */
 }
 
 .main-menu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+list-style-type: none;
+padding: 0;
+margin: 0;
 }
 
 .main-menu ul li {
-  display: inline;
-  margin-right: 20px;
+display: inline;
+margin-right: 20px;
 }
 
 .main-menu ul li:last-child {
-  margin-right: 0;
+margin-right: 0;
 }
 
 .main-menu ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+text-decoration: none;
+color: #fff;
+font-weight: bold;
 }
 
 .about-me {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
 }
 
 
 .about-me h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #e266dc;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+color: #665ee0b4;
 }
 
 .about-me .content {
-  margin-bottom: 40px;
+margin-bottom: 40px;
 }
 
 .about-me p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #e266dc;
+font-size: 18px;
+line-height: 1.6;
+color: #665ee0b4;
 }
 
 .hardware-showcase {
-  text-align: center;
-  max-width: 600px; /* Adjust the maximum width as needed */
-  padding: 0 20px;
+text-align: center;
+max-width: 600px; /* Adjust the maximum width as needed */
+padding: 0 20px;
 }
 
 /* Project styles */
 .project {
-  border-radius: 5px;
-  padding: 2px;
-  margin-bottom: 20px;
+border-radius: 5px;
+padding: 2px;
+margin-bottom: 20px;
 }
 
 .project h2 {
-  color: #3e85d6;
-}
-
-/* Blog post styles */
-.blog-post {
-  border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.blog-post h2 {
-  color: #6A5ACD;
-}
-
-/* Time text color */
-.blog-post p.time {
-  color: #2d93d6; /* Set the color for the time text */
+color: #3e85d6;
 }
 
 /* Easter Egg Modal Styles */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+background-color: #fefefe;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
 }
 
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+color: black;
+text-decoration: none;
+cursor: pointer;
 }
 
 /* for footer */
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #333; /* Adjust background color as needed */
-  color: #fff; /* Adjust text color as needed */
-  padding: 20px; /* Adjust padding as needed */
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #333; /* Adjust background color as needed */
+color: #fff; /* Adjust text color as needed */
+padding: 20px; /* Adjust padding as needed */
 }
 
 
 /* Made by Kyuiki @ 2024 - kyuiki.com */
 .spark{
-  pointer-events:none;
-  position: fixed;
-  width: 5px;
-  height: 5px;
-  background-color: rgb(226, 43, 171);
-  border-radius: 100px;
-  /* animation: 1s fall ease-in; */
+pointer-events:none;
+position: fixed;
+width: 5px;
+height: 5px;
+background-color: rgb(107, 43, 226);
+border-radius: 100px;
+/* animation: 1s fall ease-in; */
 }
 @keyframes fall {
-  to{
-    opacity: 0;
-    transform: translate(0,100px) scale(5) rotate(320deg);
-  }
-  
+to{
+  opacity: 0;
+  transform: translate(0,100px) scale(5) rotate(320deg);
+}
+
 }
 
 .friend-name {
-  color: white;
-  text-decoration: underline;
+color: white;
+text-decoration: underline;
 }
