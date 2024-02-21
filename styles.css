@@ -173,13 +173,13 @@ body {
     top: 20px; /* Adjust top distance */
     left: 20px; /* Adjust left distance */
     font-size: 24px;
-    color: #ffffff; /* Set color to red */
+    color: #ffffff;
 
   }
 
   .time-zone {
     font-size: 16px;
-    color: #ffffff; /* Set color to light gray */
+    color: #ffffff; 
     text-align: center; /* Center-align the text */
   }
   
@@ -197,12 +197,12 @@ body {
 /* Define styles for the languages text */
 .languages {
     display: flex;
-    margin-top: -108px;
+    margin-top: -107px;
     font-size: 17px;
-    color: #ac60be; /* Set color to light gray */
-    text-align: left; /* Center-align the text */
+    color: #ac60be; 
+    text-align: left; 
     align-items: center;
-    margin-left: -300px; /* Adjust as needed */
+    margin-left: -300px; 
     flex-direction: column;
   }
 
@@ -210,14 +210,14 @@ body {
     display: flex;
     margin-top: 0px;
     font-size: 17px;
-    color: #ac60be; /* Set color to light gray */
+    color: #ac60be; 
     text-align: left; /* Center-align the text */
     align-items: center;
     margin-left: 300px; /* Adjust as needed */
     flex-direction: column;
   }
 
-  /* Define styles for the FNF character */
+  /* Define styles for the Free character */
   .fnf-character {
     position: fixed;
     bottom: 58px; /* Adjust vertical position */
@@ -293,9 +293,7 @@ body {
 /* Media query for smaller screens */
 @media screen and (max-width: 775px) 
   /* Adjust styles for smaller screens */
-    .background-image {
-        background-size: contain;
-    }
+
 {
   /* Example: */
   .container {
@@ -336,7 +334,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #e266dc;
+  color: #e265db;
 }
 
 .about-me .content {
@@ -382,19 +380,6 @@ body {
   color: #2d93d6; /* Set the color for the time text */
 }
 
-/* Easter Egg Modal Styles */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
@@ -428,6 +413,11 @@ body {
   padding: 20px; /* Adjust padding as needed */
 }
 
+.friend-name {
+  color: white;
+  text-decoration: underline;
+  }
+
 
 /* Made by Kyuiki @ 2024 - kyuiki.com */
 .spark{
@@ -435,7 +425,7 @@ body {
   position: fixed;
   width: 5px;
   height: 5px;
-  background-color: rgb(226, 43, 171);
+  background-color: #e22bab;
   border-radius: 100px;
   /* animation: 1s fall ease-in; */
 }
@@ -447,7 +437,69 @@ body {
   
 }
 
-.friend-name {
-  color: white;
-  text-decoration: underline;
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #aa4691b2;
+  padding: 10px 20px;
+}
+
+.header-container div {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.header-container div:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: #ffb6c1;
+  transition: width 0.3s ease;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.content-text {
+  padding: 5px;
+  border: 2px solid #aa4691b2;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: #aa4691b2;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  color: #aa4691b2;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #ffb6c1;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.open {
+  opacity: 1 !important;
 }

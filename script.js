@@ -122,3 +122,17 @@ document.addEventListener("mousemove",(e)=>{
 //         sparkle.remove();
 //     }, 1000);
 // }z
+
+document.addEventListener('DOMContentLoaded', function() {
+  const headers = document.querySelectorAll('.header-container div');
+  const contents = document.querySelectorAll('.content-container .content');
+
+  headers.forEach((header, index) => {
+    header.addEventListener('click', () => {
+      // Toggle the 'open' class to show/hide the content
+      contents.forEach(content => content.classList.remove('open'));
+      contents[index].classList.add('open');
+    });
+  });
+});
+
