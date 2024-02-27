@@ -1,33 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mv - Hardware</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="files/smol.png">
-</head>
-<body>
-<div class="cursor"></div>
-<script src="script.js"></script>
-    <div class="container">
-        <header>
-            <nav class="main-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-            </nav>
-        </header>
+  <title>Mv - Hardware</title>
+  <link rel="stylesheet" type="text/css" href="hardware.css">
+  </head>
 
-        <div class="about-me">
-            <p>Mboard: Z87-K</p>
-            <p>Cpu: i5-4570 3.40 Ghz</p>
-            <p>Gpu: AMD Radeon HD 7700 Series</p>
-            <p>Ram: 8G 1360Mhz</p>
-            <p>Mouse: bootleg</p>
-            <p>Keyboard: Redragon K617</p>
-            <p>Manitor : Asus VX229</p>
-            <p>Harddrive : WDC 1TB HHD </p>
-          </div>
-     </body>
+  <style>
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  body {
+    background: url('files/test.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #000000;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .components {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .component {
+    width: 200px;
+    height: 100px;
+    background-color: rgba(209, 66, 126, 0.562);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+  }
+
+  p {
+  text-align: center;
+  margin: 14px;
+  font-size: 19px;
+  padding: 0;
+  height: auto;
+}
+
+  .home-btn {
+    background-color: #d92583;
+    display: block;
+    margin: 1em;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .home-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.1); /* Added */ 
+    animation: pulse 0.5s infinite alternate;
+  }
+
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  .artist-credit {
+  text-align: center;
+  margin: 10px 0;
+  background-color: rgba(172, 41, 154, 0.8);
+  padding: 10px;
+  height: 20px;
+  position: relative;
+  color: rgba(240, 93, 220, 0.952);
+  border: 1px solid rgb(255, 0, 242);
+  border-radius: 10px;
+}
+
+.artist-credit p {
+  padding: 0px;
+  border-radius: 10px;
+  margin-top: -5px;
+}
+
+.artist-credit a {
+  color: rgb(234, 0, 255);
+  text-decoration: none;
+}
+
+</style>
+
+<body>
+
+  <div class="components">
+
+    <div class="component monitor">
+      <img src="files/icons/moderboard.png">
+      <p>Z87-K</p> 
+    </div>
+
+    <div class="component monitor">
+      <img src="files/icons/keyboard_large.png">
+      <p>RedDragon K617</p> 
+    </div>
+
+    <div class="component monitor">
+      <img src="files/icons/ram_large.png">
+      <p>8GB 1600Mhz</p> 
+    </div>
+
+    <div class="component monitor">
+      <img src="files/icons/cpu_large.png">
+      <p>i5-4570 3.60Ghz</p> 
+    </div>
+
+    <div class="component monitor">
+      <img src="files/icons/g.png">
+      <p>Radeon 7700 HD</p> 
+    </div>
+
+    <div class="component monitor">
+      <img src="files/icons/storage_large.png">
+      <p>WD 1TB HDD</p> 
+    </div>
+
+    <div class="component monitor">
+      <img src="files/icons/manitor.png">
+      <p>Asus VX229</p> 
+    </div>
+    <div class="artist-credit">
+      <p style="">Icons drawn by <a href="#">Angel</a></p> 
+    </div>
+  </div>
+  <button class="home-btn" onclick="goHome()">Home</button>
+  <script> function goHome() {window.location.href = "index.html";} </script>
+</body>
 </html>
