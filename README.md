@@ -8,4 +8,4 @@ recoding welcome page (not priority)
 recoding about me, blog page(priority)
 optimizing the code(mid)
 
-thanks to the people who helped making this website as I'm still a begineer web dev :D!
+thanks to the people who helped make this website as I'm still a beginner web dev :D!
