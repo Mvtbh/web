@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Mv - Stuff</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("files/test.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-color: #000000;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 80%;
+      height: 80%;
+    }
+
+    #buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 100%;
+    }
+
+    button {
+      background-color: #9952cc;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #4e0875;
+    }
+
+    #fursona {
+      width: 30%; /* Adjust the width as needed */
+      position: absolute;
+      right: 20px; /* Adjust the right position as needed */
+      z-index: 10; /* Make sure it's above other elements */
+    }
+
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(204, 9, 9, 0.8);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      z-index: 999;
+      transition: all 0.3s ease;
+    }
+
+    #overlay.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-content {
+      width: 500px;
+      transform-origin: center;
+      transition: transform 0.3s ease;
+      display: none;
+      position: absolute;
+      background-color: #e289e2;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 0.3s ease;
+    }
+
+    #popup-content-socials p:nth-child(2) i {
+      margin-right: 5px;
+    }
+
+    #popup-content-socials p:nth-child(8) i:before {
+      content: "\f544";
+    }
+
+    #popup-content-socials p:nth-child(9) i:before {
+      content: "\f5e2";
+    }
+
+    .left-corner {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1b1d1b;
+      margin-bottom: 20px;
+    }
+
+    .middle-content {
+      font-size: 16px;
+      color: #1b1d1b;
+    }
+
+    .middle-content p {
+      margin-bottom: 10px;
+    }
+
+    .middle-content hr {
+      margin: 20px 0;
+      border: 0;
+      border-top: 1px solid #1b1d1b;
+    }
+
+    .flags {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .right-corner {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 17px;
+      color: #1b1d1b;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="buttons">
+      <button id="aboutBtn">About me</button>
+      <button id="projectsBtn">Projects</button>
+      <button id="socialsBtn">Socials</button>
+    </div>
+    <img src="files/3.png" alt="him" id="fursona">
+  </div>
+
+  <div id="popup-content-about" class="popup-content">
+    <div class="left-corner">
+      👋 Hello! I'm MasterVito
+      <hr>
+    </div>
+    <div class="middle-content">
+      <p>🕹️ - Your average fellow gamer</p>
+      <p>💼 - An editor, Proofreader, content creator, and a web programmer</p>
+      <p>📝 - I work on small projects like my website, small CSS designs, translation, and discord server stuff</p>
+      <p>🎓 - Currently Learning Hardware & Reverse Engineering</p>
+      <p>📖 - Comics enjoyer</p>
+      <p>😵 - Goes high when listening to nightcore</p>
+      <p>🙎‍♂️ - ENFJ-A type of guy</p>
+      <p>🎂 - Bday On 21 April</p>
+    </div>
+    <div class="right-corner">
+      🇮🇷 | 16 y.o
+    </div>
+  </div>
+
+  <div id="popup-content-projects" class="popup-content">
+    <div class="left-corner">
+      🎯 Projects
+      <hr>
+    </div>
+    <div class="middle-content">
+      <p>Tophat Devious Games</p>
+      <p>Working as a Ingame/Discord Admin</p>
+
+      =
+
+      <p>Angel's Art Gallery</p>
+      <p>Working as a Fulltime Manager/Developer</p>
+    </div>
+  </div>
+
+  <div id="popup-content-socials" class="popup-content">
+    <div class="left-corner">
+      🌐 Socials
+      <hr>
+    </div>
+    <div class="middle-content">
+      <p>📝 - for clicking on the buttons press the socials button (for the first time) for exit press ESC on your keyboard!</p>
+      <p><img src="#" alt="WIP"> <a href="https://www.aparat.com/MasterVito" target="_blank">Aparat</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/mvtbh" target="_blank">Github</a></p>
+      <p><i class="fab fa-telegram"></i> <a href="https://web.telegram.org/k/#@mv_tbh" target="_blank">Telegram</a></p>
+      <p><i class="fas fa-envelope"></i> Mv@mvaop.ir</p>
+      <p><i class="fab fa-spotify"></i> <a href="https://www.spotify.com" target="_blank">Spotify</a></p>
+      <p><img src="#" alt="WIP"> <a href="https://namemc.com/profile/Vi2o.1" target="_blank">NameMC</a></p>
+      <p><img src="#" alt="WIP"> <a href="https://bsky.app/profile/mvtbh.bsky.social" target="_blank">Bluesky</a></p>
+      <p><img src="#" alt="WIP"> <a href="https://www.roblox.com/users/2269976532/profile" target="_blank">Roblox</a></p>
+      <p><img src="#" alt="WIP"> <a href="https://crowdin.com/profile/Mv_" target="_blank">Crowdin</a></p>
+      <p><img src="#" alt="WIP"> <a href="https://www.reddit.com/user/vey10" target="_blank">Reddit</a></p>
+    </div>
+  </div>
+
+  <div id="overlay">
+    <div id="popup">
+      <!-- Content of the popup will be loaded here -->
+    </div>
+  </div>
+
+  <script>
+ // Get the button and popup content elements
+ var aboutBtn = document.getElementById('aboutBtn');
+    var projectsBtn = document.getElementById('projectsBtn');
+    var socialsBtn = document.getElementById('socialsBtn');
+    var popupContentAbout = document.getElementById('popup-content-about');
+    var popupContentProjects = document.getElementById('popup-content-projects');
+    var popupContentSocials = document.getElementById('popup-content-socials');
+    var overlay = document.getElementById('overlay');
+    var socialsMessage = document.getElementById('socialsMessage');
+
+    // Show popup content when hovering over the "About Me" button
+    aboutBtn.addEventListener('mouseover', function () {
+      popupContentAbout.style.display = 'block';
+    });
+
+    // Hide popup content when mouse leaves the "About Me" button
+    aboutBtn.addEventListener('mouseleave', function () {
+      popupContentAbout.style.display = 'none';
+    });
+
+    // Show popup content for "Projects" button
+    projectsBtn.addEventListener('mouseover', function () {
+      if (!overlay.classList.contains('active')) {
+        popupContentProjects.style.display = 'block';
+      }
+    });
+
+    // Hide popup content for "Projects" button
+    projectsBtn.addEventListener('mouseleave', function () {
+      if (!overlay.classList.contains('active')) {
+        popupContentProjects.style.display = 'none';
+      }
+    });
+
+    // Show popup content for "Socials" button
+    socialsBtn.addEventListener('mouseover', function () {
+      if (!overlay.classList.contains('active')) {
+        popupContentSocials.style.display = 'block';
+      }
+    });
+
+    // Hide popup content for "Socials" button
+    socialsBtn.addEventListener('mouseleave', function () {
+      if (!overlay.classList.contains('active') && !popupContentSocials.dataset.stayOpen) {
+        popupContentSocials.style.display = 'none';
+      }
+    });
+
+    // Toggle stay open state when clicking the social button
+    socialsBtn.addEventListener('click', function () {
+      popupContentSocials.dataset.stayOpen = !popupContentSocials.dataset.stayOpen;
+      socialsMessage.style.display = 'none'; // Hide the message when the button is clicked
+    });
+
+    // Hide popup content when clicking outside the popup
+    overlay.addEventListener('click', function (event) {
+      if (event.target === overlay) {
+        popupContentAbout.style.display = 'none';
+        popupContentProjects.style.display = 'none';
+        popupContentSocials.style.display = 'none';
+      }
+    });
+
+    // Hide popup content when pressing ESC key
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        popupContentAbout.style.display = 'none';
+        popupContentProjects.style.display = 'none';
+        popupContentSocials.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+
+</html>
