@@ -104,35 +104,36 @@ document.addEventListener("mousemove",(e)=>{
 });
 
 
-// OUTDATED SPARKLE (DONT USE)
-// function createSparkle(x, y) {
-//     const sparkle = document.createElement('div');
-//     sparkle.classList.add('sparkle');
-//     sparkle.style.left = x + 'px';
-//     sparkle.style.top = y + 'px';
-//     document.body.appendChild(sparkle);
+function closeContent(id) {
+  const pinkWindow = document.getElementById(`${id}Window`);
+  pinkWindow.style.display = 'none';
 
-//     // Remove sparkle element after animation ends
-//     sparkle.addEventListener('animationend', function() {
-//         sparkle.remove();
-//     });
+  const contentBox = document.getElementById(id);
+  contentBox.style.height = '100%';
+  contentBox.style.overflow = 'hidden';
+}
 
-//     // Automatically remove sparkles after a certain duration (e.g., 1 second)
-//     setTimeout(() => {
-//         sparkle.remove();
-//     }, 1000);
-// }z
+const carousel = document.querySelector('.carousel');
+let currentIndex = 0;
 
-document.addEventListener('DOMContentLoaded', function() {
-  const headers = document.querySelectorAll('.header-container div');
-  const contents = document.querySelectorAll('.content-container .content');
+function nextImage() {
+  currentIndex++;
+  if (currentIndex >= carousel.children.length) {
+    currentIndex = 0;
+  }
+  carousel.style.transition = 'transform 0.5s';
+  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
 
-  headers.forEach((header, index) => {
-    header.addEventListener('click', () => {
-      // Toggle the 'open' class to show/hide the content
-      contents.forEach(content => content.classList.remove('open'));
-      contents[index].classList.add('open');
-    });
+carousel.addEventListener('touchstart', (event) => {
+  const touchStartX = event.touches[0].clientX;
+  carousel.addEventListener('touchmove', (event) => {
+    const touchMoveX = event.touches[0].clientX;
+    const diffX = touchStartX - touchMoveX;
+    if (diffX > 50) {
+      nextImage();
+    } else if (diffX < -50) {
+      previousImage();
+    }
   });
 });
-

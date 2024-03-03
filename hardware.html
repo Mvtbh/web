@@ -1,10 +1,84 @@
-<!DOCTYPE html>
 <html>
+
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="https://cdn.discordapp.com/emojis/1211763849481551872.webp?size=96&quality=lossless">
+  <meta property="og:url" content="https://mvaop.ir">
+  <link rel="icon" type="image/png" href="https://cdn.discordapp.com/emojis/1211077976850964560.webp?size=96&quality=lossless">
   <title>Mv - Hardware</title>
   <link rel="stylesheet" type="text/css" href="hardware.css">
-  </head>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      animation: fadeIn 1s ease-in-out;
+    }
 
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    body {
+      background-size: cover;
+      background-color: #000000;
+      overflow: auto;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("files/test.jpg");
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(80px);
+    z-index: -1;
+  }
+
+    .components {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .component {
+      width: 200px;
+      height: 100px;
+      background-color: rgba(209, 66, 126, 0.562);
+      border-radius: 10px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mv - Hardware</title>
+  <link rel="stylesheet" type="text/css" href="hardware.css">
   <style>
 
 body, html {
@@ -110,6 +184,113 @@ body, html {
   text-decoration: none;
 }
 
+</style></head>
+
+  <style>
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  body {
+    background: url('files/test.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #000000;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .components {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .component {
+    width: 200px;
+    height: 100px;
+    background-color: rgba(209, 66, 126, 0.562);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+  }
+
+  p {
+  text-align: center;
+  margin: 14px;
+  font-size: 19px;
+  padding: 0;
+  height: auto;
+}
+
+  .home-btn {
+    background-color: #d92583;
+    display: block;
+    margin: 1em;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .home-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.1); /* Added */ 
+    animation: pulse 0.5s infinite alternate;
+  }
+
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  .artist-credit {
+  text-align: center;
+  margin: 10px 0;
+  background-color: #ac299acc;
+  padding: 10px;
+  height: 20px;
+  position: relative;
+  color: rgba(240, 93, 220, 0.952);
+  border: 1px solid rgb(255, 0, 242);
+  border-radius: 10px;
+}
+
+.artist-credit p {
+  padding: 0px;
+  border-radius: 10px;
+  margin-top: -5px;
+}
+
+.artist-credit a {
+  color: rgb(234, 0, 255);
+  text-decoration: none;
+}
+
 </style>
 
 <body>
@@ -154,6 +335,11 @@ body, html {
       <p style="">Icons drawn by <a href="#">Angel</a></p> 
     </div>
   </div>
+
+  <body>
+    <div class="background"></div>
+  </body>
+
   <button class="home-btn" onclick="goHome()">Home</button>
   <script> function goHome() {window.location.href = "index.html";} </script>
 </body>
