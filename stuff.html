@@ -61,10 +61,10 @@
     }
 
     #fursona {
-      width: 30%; /* Adjust the width as needed */
+      width: 30%; 
       position: absolute;
-      right: 20px; /* Adjust the right position as needed */
-      z-index: 10; /* Make sure it's above other elements */
+      right: 20px; 
+      z-index: 10;
     }
 
     #overlay {
@@ -186,8 +186,7 @@
       <p>😵 - Goes high when listening to nightcore</p>
       <p>🙎‍♂️ - ENFJ-A type of guy</p>
       <p>🎂 - Bday On 21 April</p>
-
-    </div>
+  </div>
     <div class="right-corner">
       🇮🇷 | 16 y.o
     </div>
@@ -216,17 +215,16 @@
     </div>
     <div class="middle-content">
       <p>📝 - for clicking on the buttons press the socials button (for the first time) for exit press ESC on your keyboard!</p>
-      <p><img src="#" alt="WIP"> <a href="https://www.aparat.com/MasterVito" target="_blank">Aparat</a></p>
+      <p><img src="files/icons/a.png" alt="Aparat"> <a href="https://www.aparat.com/MasterVito" target="_blank">Aparat</a></p>
       <p><i class="fab fa-github"></i> <a href="https://github.com/mvtbh" target="_blank">Github</a></p>
       <p><i class="fab fa-telegram"></i> <a href="https://web.telegram.org/k/#@mv_tbh" target="_blank">Telegram</a></p>
       <p><i class="fas fa-envelope"></i> Mv@mvaop.ir</p>
-      <p><i class="fab fa-spotify"></i> <a href="https://open.spotify.com/user/kge3f8cic2l469eddzp93ie8h" target="_blank">Spotify</a></p>
-      <p><i class="fab fa-steam"></i> <a href="https://steamcommunity.com/id/V--1/" target="_blank">Steam</a></p>
-      <p><img src="#" alt="WIP"> <a href="https://namemc.com/profile/Vi2o.1" target="_blank">NameMC</a></p>
-      <p><img src="#" alt="WIP"> <a href="https://bsky.app/profile/mvtbh.bsky.social" target="_blank">Bluesky</a></p>
-      <p><img src="#" alt="WIP"> <a href="https://www.roblox.com/users/2269976532/profile" target="_blank">Roblox</a></p>
-      <p><img src="#" alt="WIP"> <a href="https://crowdin.com/profile/Mv_" target="_blank">Crowdin</a></p>
-      <p><img src="#" alt="WIP"> <a href="https://www.reddit.com/user/vey10" target="_blank">Reddit</a></p>
+      <p><i class="fab fa-spotify"></i> <a href="https://www.spotify.com" target="_blank">Spotify</a></p>
+      <p><img src="files/icons/n.png" alt="NameMC"> <a href="https://namemc.com/profile/Vi2o.1" target="_blank">NameMC</a></p>
+      <p><img src="files/icons/b.png" alt="BlueSky"> <a href="https://bsky.app/profile/mvtbh.bsky.social" target="_blank">Bluesky</a></p>
+      <p><img src="files/icons/r.png" alt="Roblox"> <a href="https://www.roblox.com/users/2269976532/profile" target="_blank">Roblox</a></p>
+      <p><img src="files/icons/c.png" alt="Crowdin"> <a href="https://crowdin.com/profile/Mv_" target="_blank">Crowdin</a></p>
+      <p><img src="files/icons/re.png" alt="Reddit"> <a href="https://www.reddit.com/user/vey10" target="_blank">Reddit</a></p>
     </div>
   </div>
 
@@ -237,7 +235,6 @@
   </div>
 
   <script>
- // Get the button and popup content elements
  var aboutBtn = document.getElementById('aboutBtn');
     var projectsBtn = document.getElementById('projectsBtn');
     var socialsBtn = document.getElementById('socialsBtn');
@@ -247,51 +244,43 @@
     var overlay = document.getElementById('overlay');
     var socialsMessage = document.getElementById('socialsMessage');
 
-    // Show popup content when hovering over the "About Me" button
     aboutBtn.addEventListener('mouseover', function () {
       popupContentAbout.style.display = 'block';
     });
 
-    // Hide popup content when mouse leaves the "About Me" button
     aboutBtn.addEventListener('mouseleave', function () {
       popupContentAbout.style.display = 'none';
     });
 
-    // Show popup content for "Projects" button
     projectsBtn.addEventListener('mouseover', function () {
       if (!overlay.classList.contains('active')) {
         popupContentProjects.style.display = 'block';
       }
     });
 
-    // Hide popup content for "Projects" button
     projectsBtn.addEventListener('mouseleave', function () {
       if (!overlay.classList.contains('active')) {
         popupContentProjects.style.display = 'none';
       }
     });
 
-    // Show popup content for "Socials" button
     socialsBtn.addEventListener('mouseover', function () {
       if (!overlay.classList.contains('active')) {
         popupContentSocials.style.display = 'block';
       }
     });
 
-    // Hide popup content for "Socials" button
     socialsBtn.addEventListener('mouseleave', function () {
       if (!overlay.classList.contains('active') && !popupContentSocials.dataset.stayOpen) {
         popupContentSocials.style.display = 'none';
       }
     });
 
-    // Toggle stay open state when clicking the social button
     socialsBtn.addEventListener('click', function () {
       popupContentSocials.dataset.stayOpen = !popupContentSocials.dataset.stayOpen;
-      socialsMessage.style.display = 'none'; // Hide the message when the button is clicked
+      socialsMessage.style.display = 'none';
     });
 
-    // Hide popup content when clicking outside the popup
     overlay.addEventListener('click', function (event) {
       if (event.target === overlay) {
         popupContentAbout.style.display = 'none';
@@ -300,7 +289,6 @@
       }
     });
 
-    // Hide popup content when pressing ESC key
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
         popupContentAbout.style.display = 'none';
@@ -310,5 +298,4 @@
     });
   </script>
 </body>
-
 </html>

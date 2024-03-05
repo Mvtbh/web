@@ -6,9 +6,8 @@ body, html {
     font-family: 'Comic Sans MS', cursive, sans-serif;
   }
   
-  /* Background and text */
   body {
-    transition: background-size 0.5s ease; /* Add transition effect for background size change */
+    transition: background-size 0.5s ease;
     position: relative;
     background-size: cover;
     background-attachment: fixed;
@@ -33,7 +32,6 @@ body, html {
     z-index: -1;
   }
   
-  /* Name and AKA */
   .name {
     font-size: 36px;
     text-align: center;
@@ -43,8 +41,6 @@ body, html {
   .aka {
     font-size: 14px;
   }
-  
-  /* Button */
   nav {
     text-align: center;
     margin-top: 20px;
@@ -77,23 +73,20 @@ body, html {
     margin: 10 10px;
   }
 
-  
-  /* Avatar */
   .avatar {
-    width: 150px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
-    border-radius: 50%; /* Creates a circular shape */
-    overflow: hidden; /* Ensures the image stays within the rounded border */
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    overflow: hidden; 
     margin: 20px auto;
   }
   
   .avatar-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire container */
+    object-fit: cover; 
   }
   
-  /* Taskbar styles */
   .taskbar {
     margin-top: 40px;
     text-align: center;
@@ -110,8 +103,7 @@ body, html {
     text-decoration: underline;
   }
   
-  /* Friend's website button styles */
-  .friend-website {
+   .friend-website {
     color: rgb(221, 17, 17);
     text-decoration: none;
     text-align: left;
@@ -119,7 +111,6 @@ body, html {
     margin-left: 99px;
   }
   
-  /* Transport taskbar styles */
   .transport-taskbar {
     display: flex;
     justify-content: space-between;
@@ -134,19 +125,19 @@ body, html {
   }
   .opcoirs-website {
     text-align: center;
-    margin-top: 30px; /* Adjust as needed */
-    color: #fff; /* Adjust text color */
+    margin-top: 30px; 
+    color: #fff; 
   }
 
   .container {
-    text-align: center; /* Center-align content */
-    margin-top: 20px; /* Adjust margin to move the content higher */
+    text-align: center; 
+    margin-top: 20px;
   }
   
   .pronouns {
-    color: #ec32ec; /* Adjust color */
-    font-style: italic; /* Optionally italicize the text */
-    margin-top: 4px; /* Adjust negative margin to move the text higher */
+    color: #ec32ec; 
+    font-style: italic; 
+    margin-top: 4px; 
   }
 
   .software-text {
@@ -154,7 +145,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     margin-top: 150px;
-    color: white; /* Color for the specific class of text */
+    color: white;
   }
 
   .language-text {
@@ -162,19 +153,16 @@ body, html {
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-    color: white; /* Color for the specific class of text */
+    color: white;
   }
 
-/* Made by love footer */
 .made-with {
   position: fixed;
-  bottom: 20px; /* Adjust vertical position */
-  right: 10px; /* Adjust horizontal position */
-  color: #fcfcfc; /* Adjust color */
-  z-index: 999; /* Ensure it's above other content */
+  bottom: 20px;
+  right: 10px; 
+  color: #fcfcfc;
+  z-index: 999;
 }
-
-  /* Websites */
 
   .websites {
     margin-top: 20px;
@@ -188,17 +176,15 @@ body, html {
     color: rgba(180, 153, 224, 0.644);
   }
 
-/* Reset default margin and padding for body */
 body {
     margin: 0;
     padding: 0;
   }
   
-  /* Clock styles */
   .clock {
-    position: fixed; /* Position the clock fixed within the viewport */
-    top: 20px; /* Adjust top distance */
-    left: 20px; /* Adjust left distance */
+    position: fixed; 
+    top: 20px;
+    left: 20px; 
     font-size: 24px;
     color: #ffffff;
 
@@ -207,21 +193,19 @@ body {
   .time-zone {
     font-size: 16px;
     color: #ffffff; 
-    text-align: center; /* Center-align the text */
+    text-align: center; 
   }
   
-
   .icon-container {
 
     display: grid;
-    justify-content: center; /* Horizontally center the icons */
-    align-items: fixed; /* Vertically center the icons */
+    justify-content: center; 
+    align-items: fixed; 
 }
 .centered-text {
   text-align: center;
 }
 
-/* Define styles for the languages text */
 .languages {
     display: flex;
     margin-top: -107px;
@@ -238,39 +222,28 @@ body {
     margin-top: 0px;
     font-size: 17px;
     color: #ac60be; 
-    text-align: left; /* Center-align the text */
+    text-align: left; 
     align-items: center;
-    margin-left: 300px; /* Adjust as needed */
+    margin-left: 300px; 
     flex-direction: column;
   }
 
-  /* Define styles for the Free character */
   .fnf-character {
     position: fixed;
-    bottom: 58px; /* Adjust vertical position */
-    left: 20px; /* Adjust horizontal position */
-    z-index: 9999; /* Ensure it's above other content */
+    bottom: 58px; 
+    left: 20px; 
+    z-index: 9999;
   }
 
-/* Keyframes for opening fade animation */
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 
-/* Apply opening fade animation to the body */
 body {
-  animation: fadeIn 1.5s ease-in-out forwards; /* Adjust duration and timing function as needed */
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
-/* Styles for screens smaller than 768px (e.g. tablets) */
-@media screen and (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-/* Styles for screens smaller than 480px (e.g. mobile phones) */
 @media screen and (max-width: 479px) {
   body {
     font-size: 12px;
@@ -328,7 +301,6 @@ body {
   color: #e266dc;
 }
 
-/* Project styles */
 .project {
   border-radius: 5px;
   padding: 2px;
@@ -339,7 +311,6 @@ body {
   color: #3e85d6;
 }
 
-/* Blog post styles */
 .blog-post {
   border-radius: 5px;
   padding: 20px;
@@ -350,9 +321,8 @@ body {
   color: #6A5ACD;
 }
 
-/* Time text color */
 .blog-post p.time {
-  color: #2d93d6; /* Set the color for the time text */
+  color: #2d93d6;
 }
 
 .modal-content {
@@ -377,15 +347,14 @@ body {
   cursor: pointer;
 }
 
-/* for footer */
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #333; /* Adjust background color as needed */
-  color: #fff; /* Adjust text color as needed */
-  padding: 20px; /* Adjust padding as needed */
+  background-color: #333; 
+  color: #fff;
+  padding: 20px;
 }
 
 .friend-name {
@@ -501,16 +470,16 @@ body {
 }
 
 .lanyard-container {
-  display: flex; /* Use flexbox */
+  display: flex; 
   position: absolute;
   bottom: 1;
   left: 50%;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center; 
+  align-items: center; 
   margin-top: 20px;
-  bottom: -8; /* Align to the bottom */
-  left: 0; /* Align to the left */
-  width: 100%; /* Take up the full width */
+  bottom: -8; 
+  left: 0;
+  width: 100%; 
 }
 
 .lanyard-container iframe {
