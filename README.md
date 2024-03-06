@@ -4,6 +4,6 @@ nothing is final I will update the site in the future! I'm currently busy with s
 
 current goals:
 
-recoding blog page(priority)
+recoding blog page
 
 thanks to the people who helped make this website as I'm still a beginner web dev :D!
