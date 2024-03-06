@@ -1,110 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Mv's Personal Website">
-    <meta property="og:description" content="you're a goober :3">
-    <meta property="og:image" content="https://cdn.discordapp.com/emojis/1211763849481551872.webp?size=96&quality=lossless">
-    <meta property="og:url" content="https://mvaop.ir">
-    <meta property="og:type" content="website">
-    <title>Mv - Landing </title>
-    
-    <!-- Minified and combined CSS file -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/emojis/1211077976850964560.webp?size=96&quality=lossless">
-    
-    <style>
-        @media (max-width: 767px) {
-            .desktop-only {
-                display: none;
-            }
-            .background {
-                display: block;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1 class="name">MasterVito<span class="aka">(Mv)</span></h1>
-            <div class="time-text"></div>
-            <div id="clock"></div>
-            <p class="pronouns">he/him</p>
-            <div class="avatar">
-                <img src="files/gob.png" alt="him" class="avatar-img">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vito</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/particle.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div class="w-full backdrop-blur-md">
+      <div class="mx-auto flex flex-col max-w-md">
+        <div
+          class="flex gap-4 relative p-4 shadow-md bg-pink-400 bg-opacity-60 backdrop-blur-md mt-20 items-center rounded"
+        >
+          <img src="files/pfp.png" class="sm:w-32 w-24" alt="" />
+          <div class="name-wrapper">
+            <h1 class="text-xl sm:text-3xl font-bold">
+              MasterVito
+              <small class="text-md font-normal text-pink-900">(Mv)</small>
+            </h1>
+            <p class="pronouns opacity-75">
+              <span data-time> </span>
+              •
+              <span> He/Him </span>
+            </p>
+            <div class="mt-4 flex">
+              <a
+                href="https://discord.com/users/443136409835012116"
+                class="text-black px-2 py-1 rounded text-sm font-semibold border border-slate-600 flex gap-2 items-center"
+                data-dc-status
+              >
+                <span class="rounded-full p-1 bg-white"></span>
+
+                <span>--</span>
+              </a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="https://twitter.com/mv_tbh" target="_blank" rel="noopener" class="button github">Twitter</a></li>
-                    <li><a href="https://discord.gg/cDZsG2uxga" target="_blank" rel="noopener" class="button discord">Discord</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="taskbar">
-            <i class="fas fa-clock"></i>
-            <a href="blog.html" target="_blank">Blog</a>
-            <a href="stuff.html" target="_blank">Stuff(WIP)</a>
-            <a href="hardware.html" target="_blank">Hardware</a>
-            <a href="https://www.coffeete.ir/mvtbh" target="_blank">Donation</a>
+          </div>
+          <img src="files/sleppy.png" class="sm:h-16 h-12 -bottom-2 -right-4 absolute" alt="" />
         </div>
-
-        <!-- Made with <3 -->
-        <div class="made-with desktop-only">
-            Made With <span class="heart">&lt;3</span> By Mv & <a href="https://kyuiki.com" target="_blank" class="friend-name">Kyuiki</a> | Coded in HTML - CSS - Js
+        <div
+          class="flex gap-2 p-2 shadow-md bg-pink-400 bg-opacity-60 backdrop-blur-md mt-4 mb-20 rounded md:font-bold"
+        >
+          <a href="blog.html" class="w-full bg-white bg-opacity-50 px-4 py-2 rounded shadow text-center min-w-[96px]"> Blog </a>
+          <a href="stuff.html" class="w-full bg-white bg-opacity-50 px-4 py-2 rounded shadow text-center sm:min-w-[96px]"
+            >Stuff</a
+          >
+          <a href="hardware.html" class="w-full bg-white bg-opacity-50 px-4 py-2 rounded shadow text-center sm:min-w-[96px]"
+            >Hardware</a
+          >
         </div>
-    </div>
+      </div>
 
-    <div class="websites">
-        <a href="op/index.html">Opcoir's Website </3</a>
-        <a href="https://hawmi.bio">Hawmi's Website (Friend)</a>
-    </div>
-
-    <div class="fnf-character desktop-only">
-        <img src="files/free.gif" alt="free">
-    </div>
-
-    <div class="softwares">
-        <p class="centered-text">I Have Been Using These Softwares</p>
-        <div class="icon-container">
-            <img src="https://skillicons.dev/icons?i=sublime,github,pr,robloxstudio,vscode" />
+      <div class="mx-auto flex flex-col max-w-xl p-2 text-white">
+        <div
+          class="gap-2 p-2 px-4 shadow-md bg-pink-700 bg-opacity-60 backdrop-blur-md mt-2 mb-2 rounded sm:flex items-center"
+        >
+          <div class="w-full">
+            <h2 class="font-bold">Languages Used</h2>
+            <p class="text-sm">I program with this languages</p>
+          </div>
+          <div class="flex-shrink-0 mt-2 sm:mt-0">
+            <img src="https://skillicons.dev/icons?i=html,css,js,py,lua" class="h-10 mx-auto" />
+          </div>
         </div>
-    </div>
-
-    <div class="icon-container languages">
-        <p class="centered-text">Languages I'm Learning/Using</p>
-        <div class="icon-container">
-            <img src="https://skillicons.dev/icons?i=html,css,js,py,lua" />
+        <div
+          class="gap-2 p-2 px-4 shadow-md bg-pink-700 bg-opacity-60 backdrop-blur-md mt-2 mb-20 rounded sm:flex items-center"
+        >
+          <div class="flex-shrink-0 text-center">
+            <img src="https://skillicons.dev/icons?i=sublime,github,pr,robloxstudio,vscode" class="h-10 mx-auto" />
+          </div>
+          <div class="w-full text-right mt-2 sm:mt-0">
+            <h2 class="font-bold">Softwares Used</h2>
+            <p class="text-sm">I use this software in everyday life</p>
+          </div>
         </div>
+      </div>
     </div>
-
-    <footer class="transport-taskbar desktop-only">
-        <p>Copyright © 2024 Mv. All Rights Reserved.</p>
-    </footer>
-
-    <div class="background"></div>
-
-    <div class="lanyard-container desktop-only">
-        <iframe src="https://lanyard.cnrad.dev/api/443136409835012116?theme=light&bg=FFB7C5&borderRadius=20px" width="410" height="210" frameborder="0" style="border: none; overflow: hidden;"></iframe>
+    <div class="fixed flex text-sm bottom-0 left-0 bg-opacity-75 w-full px-2 py-1 bg-pink-700 text-white">
+      <div class="w-full">Made with <3 by Kyuiki & Mv</div>
+      <div class="text-right w-full">Mv @ 2024</div>
     </div>
-
-    <!-- JavaScript file -->
-    <script defer src="script.js"></script>
-    <!-- Feedback Modal -->
-    <div id="feedbackModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeFeedbackModal()">&times;</span>
-            <h2>Leave Feedback</h2>
-            <form id="feedbackForm">
-                <label for="feedback">Your Feedback:</label><br>
-                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </div>
-</body>
+  </body>
 </html>
