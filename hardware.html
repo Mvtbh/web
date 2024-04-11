@@ -1,176 +1,79 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mv - Hardware</title>
-  <meta name="robots" content="index,follow" />
-  <meta name="theme-color" content="#c2b0db" />
-  <meta property="og:title" content="MasterVito's Personal Site" />
-  <meta property="og:description" content="you're a goober :3">
-  <meta property="og:url" content="https://mvaop.ir" />
-  <meta property="og:image" content="/files/sleepy.png" />
-  <meta property="og:image:alt" content="Yup Thats me >:3" />
-  <link rel="icon" type="image/png" href="files/vwv.png"> 
-  <link rel="canonical" href="https://mvaop.ir" />
-  <style>
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    animation: fadeIn 1s ease-in-out;
-  }
-
-  @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-  body {
-    background: url('files/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    background-color: #000000;
-    overflow: auto;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .components {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .component {
-    width: 200px;
-    height: 100px;
-    background-color: rgba(209, 66, 126, 0.562);
-    border-radius: 10px;
-    margin: 20px;
-    text-align: center;
-  }
-
-  img {
-    width: 50px;
-    height: 50px;
-    margin-right: 5px;
-  }
-
-  p {
-  text-align: center;
-  margin: 14px;
-  font-size: 19px;
-  padding: 0;
-  height: auto;
-}
-
-  .home-btn {
-    background-color: #d92583;
-    display: block;
-    margin: 1em;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-  }
-
-  .home-btn:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
-    animation: pulse 0.5s infinite alternate;
-  }
-
-  @keyframes pulse {
-    from {
-      transform: scale(1);
-    }
-
-    to {
-      transform: scale(1.1);
-    }
-  }
-
-  .artist-credit {
-  text-align: center;
-  margin: 10px 0;
-  background-color: rgba(172, 41, 154, 0.8);
-  padding: 10px;
-  height: 20px;
-  position: relative;
-  color: rgba(240, 93, 220, 0.952);
-  border: 1px solid rgb(255, 0, 242);
-  border-radius: 10px;
-}
-
-.artist-credit p {
-  padding: 0px;
-  border-radius: 10px;
-  margin-top: -5px;
-}
-
-.artist-credit a {
-  color: rgb(234, 0, 255);
-  text-decoration: none;
-}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mv - Hardware</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#c2b0db" />
+    <meta property="og:title" content="MasterVito's Personal Site" />
+    <meta property="og:description" content="you're a goober :3">
+    <meta property="og:url" content="https://mvaop.ir" />
+    <meta property="og:image" content="/files/sleepy.png" />
+    <meta property="og:image:alt" content="Yup Thats me >:3" />
+    <link rel="icon" type="image/png" href="files/vwv.png">
+    <link rel="canonical" href="https://mvaop.ir" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/particle.js" defer></script>
 </head>
+<body class="min-h-screen flex justify-center items-center bg-cover" style="background-image: url('files/background.jpg')"></body>
 
-<body>
+    <div class="bg-pink-400 p-4 bg-opacity-40 shadow-md max-w-md backdrop-blur-md mt-210 items-center rounded-xl p-8 shadow-lg">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-11 justify-items-center">
+            <div class="hardware-box">
+                <img src="files/icons/cpu_large.png" alt="Hardware 1" class="w-24 h-24 mx-auto">
+                <div class="text-center">
+                    <h2 class="text-lg font-bold">CPU</h2>
+                    <p class="text-sm">i5-4570</p>
+                </div>
+            </div>
 
-  <div class="components">
+            <div class="hardware-box">
+                <img src="files/icons/g.png"Hardware 2" class="w-24 h-24 mx-auto">
+                <div class="text-center">
+                    <h2 class="text-lg font-bold">GPU</h2>
+                    <p class="text-sm">Readon 7700 HD</p>
+                </div>
+            </div>
 
-    <div class="component monitor">
-      <img src="files/icons/moderboard.png">
-      <p>Z87-K</p>
-    </div>
+            <div class="hardware-box">
+              <img src="files/icons/ram_large.png"Hardware 2" class="w-24 h-24 mx-auto">
+              <div class="text-center">
+                  <h2 class="text-lg font-bold">Ram</h2>
+                  <p class="text-sm">8 GB 1600Mhz</p>
+              </div>
+          </div>
 
-    <div class="component monitor">
-      <img src="files/icons/keyboard_large.png">
-      <p>RedDragon K617</p>
-    </div>
+          <div class="hardware-box">
+            <img src="files/icons/storage_large.png"Hardware 2" class="w-24 h-24 mx-auto">
+            <div class="text-center">
+                <h2 class="text-lg font-bold">HHD</h2>
+                <p class="text-sm">2TB WD</p>
+            </div>
+        </div>
 
-    <div class="component monitor">
-      <img src="files/icons/ram_large.png">
-      <p>8GB 1600Mhz</p>
-    </div>
+        <div class="hardware-box">
+          <img src="files/icons/manitor.png"Hardware 2" class="w-24 h-24 mx-auto">
+          <div class="text-center">
+              <h2 class="text-lg font-bold">Manitor</h2>
+              <p class="text-sm">VX229</p>
+          </div>
+      </div>
 
-    <div class="component monitor">
-      <img src="files/icons/cpu_large.png">
-      <p>i5-4570 3.60Ghz</p>
-    </div>
+            <div class="hardware-box">
+                <img src="files/icons/keyboard_large.png" alt="Hardware 3" class="w-24 h-24 mx-auto">
+                <div class="text-center">
+                    <h2 class="text-lg font-bold">Keyboard</h2>
+                    <p class="text-sm">K617</p>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="block bg-white bg-opacity-50 text-black px-6 py-3 rounded-lg mt-8 text-center duration-300 ease-in-out transform hover:scale-105 hover:bg-opacity-75 hover:text-gray-900">Home</a>
+      </div>
 
-    <div class="component monitor">
-      <img src="files/icons/g.png">
-      <p>Radeon 7700 HD</p>
-    </div>
-
-    <div class="component monitor">
-      <img src="files/icons/storage_large.png">
-      <p>WD 1TB HDD</p>
-    </div>
-
-    <div class="component monitor">
-      <img src="files/icons/manitor.png">
-      <p>Asus VX229</p>
-    </div>
-    <div class="artist-credit">
-      <p>Icons drawn by <a href="https://twitter.com/Angelthis0">Angel</a></p>
-    </div>
+    <a href="https://twitter.com/Angelthis0" class="hidden md:block absolute bottom-7 text-sm text-white right-99">Icons Drawn by Angel</a>
   </div>
-
-  <body>
-    <div class="background"></div>
-  </body>
-
-  <button class="home-btn" onclick="goHome()">Home</button>
-  <script>
-    function goHome() {
-      window.location.href = "index.html";
-    }
-  </script>
 
 </body>
 </html>
