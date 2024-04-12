@@ -29,3 +29,26 @@
     }
   });
 }
+
+function confetti() {
+  const confettiElements = [];
+  const colors = ['#fde132', '#009bde', '#ff6b00'];
+
+  for (let i = 0; i < 50; i++) {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.style.left = Math.random() * window.innerWidth + 'px';
+      confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      confettiElements.push(confetti);
+      document.body.appendChild(confetti);
+  }
+  
+  setTimeout(() => {
+      confettiElements.forEach(confetti => confetti.remove());
+  }, 5000);
+}
+
+const today = new Date();
+if (today.getMonth() === 3 && today.getDate() === 12) {
+}
